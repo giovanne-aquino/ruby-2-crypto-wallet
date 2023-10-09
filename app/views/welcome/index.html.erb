@@ -5,3 +5,5 @@
 <li>
     <%= link_to "Cadastro de Moeadas", coins_path%>
 </li>
+
+<p> você esta em ambiente de <%= Rails.env == "development" ? "Desenvolvimento " : "Produção"%> </p>
