@@ -10,7 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.1].define(version: 2023_10_09_123245) do
+ActiveRecord::Schema[7.1].define(version: 2023_10_09_142445) do
+  create_table "coin", force: :cascade do |t|
+    t.string "description"
+    t.string "acronym"
+    t.string "url_image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "coins", force: :cascade do |t|
     t.string "description"
     t.string "acronym"
