@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  MiningType: MyString
+  name: MyString
+  acronym: MyString
+
+two:
+  MiningType: MyString
+  name: MyString
+  acronym: MyString

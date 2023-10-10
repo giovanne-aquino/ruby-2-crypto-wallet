@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :gs
   resources :coins
 
   get 'welcome/index'
