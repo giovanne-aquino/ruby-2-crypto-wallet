@@ -2,8 +2,12 @@
 <p>Estrou aprendendo '-'</p>
 <p>Data: <%= Date.today.strftime("%d/%m/%Y")%></p>
 
-<li>
-    <%= link_to "Cadastro de Moeadas", coins_path%>
-</li>
+<%= render "menu"%>
 
-<p> você esta em ambiente de <%= Rails.env == "development" ? "Desenvolvimento " : "Produção"%> </p>
+<p> você esta em ambiente de <strong> <%= Rails.env == "development" ? "Desenvolvimento" : "Produção"%> </p></strong>
+
+<p>
+bem vindo <strong><%= @meu_nome %></strong>
+<br>
+meu curso é <strong> <%= @curso %></strong>
+</p>
