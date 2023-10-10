@@ -7,3 +7,18 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Coin.create!(
+  [
+    {
+        description:"Bitcoin",
+        acronym: "BTC",
+        url_image: "https://upload.wikimedia.org/wikipedia/commons/5/50/Bitcoin.png"
+    },
+    {
+        description:"Ethereum",
+        acronym: "ETH",
+        url_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/ETHEREUM-YOUTUBE-PROFILE-PIC.png/600px-ETHEREUM-YOUTUBE-PROFILE-PIC.png"
+    }
+  ]
+)          
