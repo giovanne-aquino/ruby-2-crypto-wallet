@@ -1,6 +1,13 @@
 <h1>Seja Bem vindo</h1>
+<h2> O idioma utilizado na apliacação é:<%= I18n.locale == :en ? " Inglẽs Estadunidense" : " Português brasileiro"%></h2>
+
 <p>Estrou aprendendo '-'</p>
-<p>Data: <%= Date.today.strftime("%d/%m/%Y")%></p>
+
+
+
+<p>Data: <%= I18n.locale == :en ? Date.today.strftime("%m/%d/%Y") : Date.today.strftime("%d/%m/%Y")%></p>
+
+<p><%= I18n.t('oi') %></p>
 
 <%= render "menu"%>
 

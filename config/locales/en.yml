@@ -27,5 +27,10 @@
 #       "yes": yup
 #       enabled: "ON"
 
+
 en:
-  hello: "Hello world"
+  oi: "Hello world I'm translating with RailsI18n"
+
+pt-BR:
+  oi: "Olá mundo Estou traduzindo com RailsI18n"
+
