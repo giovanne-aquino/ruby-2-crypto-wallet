@@ -1,8 +1,15 @@
+<p>
+    <%= link_to 'Portugues', '/?locale=pt-BR ' %>
+</p>
+
+<p>
+    <%= link_to "English", "/?locale=en " %>
+</p>
+
 <h1>Seja Bem vindo</h1>
 <h2> O idioma utilizado na apliacação é:<%= I18n.locale == :en ? " Inglẽs Estadunidense" : " Português brasileiro"%></h2>
 
 <p>Estrou aprendendo '-'</p>
-
 
 
 <p>Data: <%= I18n.locale == :en ? Date.today.strftime("%m/%d/%Y") : Date.today.strftime("%d/%m/%Y")%></p>

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :mining_types
   resources :coins
 
-  get 'welcome/index'
+  root to:'welcome#index'
   get '/inicio', to: 'welcome#index'
 
   resources :coins
