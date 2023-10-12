@@ -9,10 +9,10 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require rails-ujs
-//= require activestorage
-//= require turbolinks
+//= require_tree
+//= require_self
+//= require jquery
+//= require notify.js
 
-<% msg = Time.now < 12 ? "Bom dia!" : "Olá!!!" %>
-alert("<%= Time.now %>");
+
+

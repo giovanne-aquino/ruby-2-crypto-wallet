@@ -11,15 +11,6 @@ Rails.application.config.assets.version = "1.0"
 # folder are already added.
 # Rails.application.config.assets.precompile += %w( admin.js admin.css )
 
-Rails.application.config.assets.precompile += %w( cable.js
-                                                  coins.js 
-                                                  mining_types.js
-                                                  scaffolds.js 
-                                                  welcome.js
-                                            )
+Rails.application.config.assets.precompile += %w(jquery.js)
 
-Rails.application.config.assets.precompile += %w( coins.css 
-                                                  mining_types.css
-                                                  scaffolds.css 
-                                                  welcome.css
-                                                )
+Rails.application.config.assets.precompile += %w(notify.js)                                               
