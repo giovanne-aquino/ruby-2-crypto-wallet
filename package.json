@@ -1,8 +1,13 @@
 {
-  "name": "crypto-wallet",
+  "name": "crypo-wallet",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:giovanne-aquino-clear/ruby-2-crypto-wallet.git",
-  "author": "Giovanne Aquino <giovanne.aquino.clear@gmail.com>",
-  "license": "MIT"
+  "author": "Giovanne",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "notify-js-legacy": "^0.4.1",
+    "popper.js": "^1.14.4"
+  }
 }
