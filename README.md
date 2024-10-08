@@ -1,26 +1,55 @@
-# README
+# Ruby Crypto Wallet
+Welcome to the ruby-2-crypto-wallet repository. This project is a comprehensive cryptocurrency wallet application built using Ruby on Rails. It leverages multiple technologies to provide a secure, efficient, and user-friendly platform for managing cryptocurrency transactions.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Technologies Used
+Ruby: 3.0.2
+Rails: ~> 7.1.0
+Database: SQLite3
+Frontend: HTML, CSS, JavaScript, SCSS
+Containerization: Dockerfile
+Shell Scripts: For automation tasks
+## Main Functionalities
+# User Authentication and Security
+Implements robust user authentication and authorization mechanisms to ensure secure access to wallet functionalities.
+# Cryptocurrency Management
+Allows users to manage their cryptocurrency portfolio, including adding, removing, and viewing different cryptocurrencies.
+# Real-Time Updates
+Utilizes Redis and Action Cable to provide real-time updates on cryptocurrency prices, ensuring users always have the latest information.
+# Transaction History
+Tracks and displays the transaction history for each user, including deposits, withdrawals, and transfers.
+# Responsive UI
+Built with a responsive design using Bootstrap and custom CSS/SCSS to ensure a seamless experience across all devices.
+# API Integration
+Integrates with various cryptocurrency APIs to fetch live data and perform transactions.
 
-Things you may want to cover:
+## Installation
+To set up the development environment, follow these steps:
 
-* Ruby version
+Clone the repository:
 
-* System dependencies
+git clone https://github.com/giovanne-aquino/ruby-2-crypto-wallet.git
+cd ruby-2-crypto-wallet
+Install dependencies:
 
-* Configuration
+bundle install
+Configure the database:
 
-* Database creation
+rails db:create db:migrate
+Start the server:
 
-* Database initialization
+rails server
+Running with Docker
+For a containerized setup, follow these steps:
 
-* How to run the test suite
+Build the Docker image:
 
-* Services (job queues, cache servers, search engines, etc.)
+docker build -t ruby-2-crypto-wallet .
+Run the Docker container:
 
-* Deployment instructions
+docker run -p 3000:3000 ruby-2-crypto-wallet
+Development and Testing
+The project includes several tools to aid in development and testing:
 
-* ...
-# ruby-2-crypto-wallet
-# ruby-2-crypto-wallet
+Web Console: For debugging in the browser.
+Capybara and Selenium-WebDriver: For system testing.
+Bootsnap: For reducing boot times through caching.
